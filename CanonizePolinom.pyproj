@@ -22,10 +22,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CanonizePolinom.py" />
+    <Compile Include="PrintDict.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ReadPolynom.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CanonizeTerm.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sorting.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

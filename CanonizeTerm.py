@@ -67,10 +67,8 @@ def read_term(term, sign, flag):
             key = "free_digit"
         else:
             key = str(temp_key)
-        print("\nDecimal part: ", value, end="\t")
-        print("\nKey part: ", key, end="\n")
-    except:
-        print("Somethink wrong")
+    except Exception as exp:
+        print("Somethink wrong", exp)
 
     #adding right sign to value
     if flag == 1:
@@ -79,7 +77,5 @@ def read_term(term, sign, flag):
     elif flag == -1:
         if sign == "+":
             value = value*(-1)
-
-    print(key, " ::::::::: ", value)
 
     return key, value
